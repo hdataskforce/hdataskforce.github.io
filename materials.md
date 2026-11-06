@@ -13,8 +13,8 @@ References
 - **J. A. Lee, M. Verleysen.** Nonlinear Dimensionality Reduction
 - **Roman Vershynin**. High Dimensional Probability. (book draft)  
   <https://www.math.uci.edu/~rvershyn/papers/HDP-book/HDP-book.html>
-- … – anything missing – drop us a note:  
-  fschleif@techfak.uni-bielefeld.de, axk@cs.bham.ac.uk
+- Anything missing? Drop us a note:
+  [Jakramate Bootkrajang](mailto:jakramate.b@cmu.ac.th) or [Ata Kaban](mailto:a.kaban@bham.ac.uk).
 
 Major conferences and workshops
 

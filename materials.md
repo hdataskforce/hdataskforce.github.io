@@ -21,4 +21,4 @@ Major conferences and workshops
 - NeurIPS – [nips.cc](http://nips.cc)
 - ICML – [icml.cc](http://icml.cc)
 - KDD – [www.kdd.org](http://www.kdd.org)
-- ICDM – <https://icdm2024.org/>
+- ICDM – [icdm2026.neu.edu.cn](https://icdm2026.neu.edu.cn/) (ICDM has a new website each year)

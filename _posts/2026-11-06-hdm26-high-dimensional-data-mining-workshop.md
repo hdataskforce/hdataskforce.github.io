@@ -8,7 +8,8 @@ tags: [ICDM, workshop, high dimensional data]
 ### 12 November 2026 · Shenyang, China
 
 The 13th edition of our High Dimensional Data Mining workshop takes place as a satellite
-workshop of the IEEE International Conference on Data Mining (ICDM 2026).
+workshop of the IEEE International Conference on Data Mining
+([ICDM 2026](https://icdm2026.neu.edu.cn/), 12–15 November 2026).
 
 This year the workshop particularly encourages work on **interpretable high dimensional data
 mining**, as well as work that counters the issues of low sample size and takes advantage of

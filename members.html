@@ -1,0 +1,25 @@
+---
+layout: default
+title: Members
+permalink: /members/
+---
+<div class="wrap page">
+  <header class="page-head">
+    <p class="kicker">People</p>
+    <h1>Members</h1>
+    <p class="lead">Researchers contributing to the task force, listed alphabetically by first name.</p>
+  </header>
+  <ul class="member-grid">
+    {% assign people = site.members | sort: "name" %}
+    {% for m in people %}
+    <li class="member">
+      <a href="{{ m.url | relative_url }}">
+        <span class="member-name">{{ m.name }}</span>
+        {% if m.role %}<span class="badge">{{ m.role }}</span>{% endif %}
+        {% if m.institute %}<span class="member-inst">{{ m.institute }}</span>{% endif %}
+        {% if m.country %}<span class="member-country">{{ m.country }}</span>{% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

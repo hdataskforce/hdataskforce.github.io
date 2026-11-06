@@ -1,0 +1,48 @@
+title: High Dimensional Data Analysis Task Force
+short_title: HDDA Task Force
+description: >-
+  IEEE Task Force on High Dimensional Data Analysis — bringing together
+  researchers working on the theory, methods and applications of
+  high dimensional data.
+url: "https://hdataskforce.github.io"
+baseurl: ""
+lang: en
+timezone: UTC
+repository: hdataskforce/hdataskforce.github.io
+
+# Navigation (order matters)
+nav:
+  - { title: About,     url: /about/ }
+  - { title: Topics,    url: /hdda-topics/ }
+  - { title: Members,   url: /members/ }
+  - { title: News,      url: /news/ }
+  - { title: Materials, url: /materials/ }
+
+# Keep old WordPress URLs working
+permalink: /:year/:month/:day/:title/
+
+collections:
+  members:
+    output: true
+    permalink: /members/:name/
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "", type: members }
+    values: { layout: member }
+  - scope: { path: "" }
+    values: { layout: page }
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

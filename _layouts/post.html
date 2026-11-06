@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="wrap narrow page">
+  <header class="page-head">
+    <p class="kicker"><a href="{{ '/news/' | relative_url }}">News</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+  {% assign labels = page.categories | concat: page.tags %}
+  {% if labels.size > 0 %}
+  <ul class="tags" aria-label="Tags">{% for t in labels %}<li>{{ t }}</li>{% endfor %}</ul>
+  {% endif %}
+  <nav class="post-nav" aria-label="More news">
+    {% if page.previous %}<a class="prev" href="{{ page.previous.url | relative_url }}"><span>Earlier</span>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
+    {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>Later</span>{{ page.next.title }}</a>{% endif %}
+  </nav>
+</article>

@@ -1,0 +1,38 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="kicker">IEEE Task Force</p>
+      <h1>High Dimensional Data&nbsp;Analysis</h1>
+      <p class="lead">A forum for researchers working on the theory, methods and applications of data whose dimensionality is large: from the curse of dimensionality and random projections to manifold learning, sparse models and visualisation.</p>
+      <p class="actions">
+        <a class="btn" href="{{ '/hdda-topics/' | relative_url }}">Research topics</a>
+        <a class="btn ghost" href="{{ '/members/' | relative_url }}">Meet the members</a>
+      </p>
+    </div>
+    <div class="hero-art" aria-hidden="false">
+      {% include manifold.svg %}
+    </div>
+  </div>
+</section>
+
+<div class="wrap home-grid">
+  <section class="home-news" aria-labelledby="news-h">
+    <div class="section-head">
+      <h2 id="news-h">Latest news</h2>
+      <a href="{{ '/news/' | relative_url }}">All news →</a>
+    </div>
+    <ol class="news-list news-cards">
+      {% for post in site.posts limit: 6 %}
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+</div>

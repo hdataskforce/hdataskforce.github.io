@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.url == "/" %}{% assign page_title = site.title %}{% else %}{% assign page_title = page.title | default: page.name | append: " · " | append: site.short_title %}{% endif %}
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">
+          <span class="brand-kicker">IEEE Task Force</span>
+          <span class="brand-name">High Dimensional Data Analysis</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        {% for item in site.nav %}
+        {% assign active = false %}{% if page.url contains item.url %}{% assign active = true %}{% endif %}
+        {% if item.url == "/news/" and page.collection == "posts" %}{% assign active = true %}{% endif %}
+        <a href="{{ item.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-title">IEEE Task Force on High Dimensional Data Analysis</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/{{ site.repository }}">Site source</a>
+        <span>© {{ site.time | date: "%Y" }}</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

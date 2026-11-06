@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% assign m = page %}
+<article class="wrap narrow page">
+  <header class="page-head">
+    <p class="kicker"><a href="{{ '/members/' | relative_url }}">Members</a>{% if m.role %} · {{ m.role }}{% endif %}</p>
+    <h1>{{ m.name }}</h1>
+    {% if m.position or m.function %}<p class="lead">{{ m.position }}{% if m.position and m.function %} · {% endif %}{{ m.function }}</p>{% endif %}
+  </header>
+
+  <dl class="facts">
+    {% if m.institute %}<dt>Institution</dt><dd>{% if m.institute_url %}<a href="{{ m.institute_url }}">{{ m.institute }}</a>{% else %}{{ m.institute }}{% endif %}</dd>{% endif %}
+    {% if m.address %}<dt>Address</dt><dd class="addr">{{ m.address | escape | newline_to_br }}</dd>{% endif %}
+    {% if m.city or m.country %}<dt>Location</dt><dd>{{ m.city }}{% if m.city and m.country %}, {% endif %}{{ m.country }}</dd>{% endif %}
+    {% if m.email %}<dt>Email</dt><dd>{{ m.email }}</dd>{% endif %}
+    {% if m.phone %}<dt>Phone</dt><dd>{{ m.phone }}</dd>{% endif %}
+    {% if m.mobile %}<dt>Mobile</dt><dd>{{ m.mobile }}</dd>{% endif %}
+    {% if m.fax %}<dt>Fax</dt><dd>{{ m.fax }}</dd>{% endif %}
+    {% if m.website %}<dt>Website</dt><dd><a href="{{ m.website }}">{{ m.website | remove: "https://" | remove: "http://" }}</a></dd>{% endif %}
+    {% if m.info %}<dt>Notes</dt><dd>{{ m.info }}</dd>{% endif %}
+  </dl>
+
+  {% if content != "" %}<div class="prose">{{ content }}</div>{% endif %}
+</article>

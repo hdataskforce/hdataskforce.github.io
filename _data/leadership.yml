@@ -1,0 +1,13 @@
+# Shown on the About page. `role` must match the `role:` field in the member's _members/ file.
+current:
+  - role: Chair
+    since: 2024
+  - role: Vice-chair
+    since:          # fill in the year if known
+
+# Former leaders: `name` must match the member's `name:` exactly.
+former:
+  - name: Frank-Michael Schleif
+    note:           # e.g. "Chair, 2014–2020"
+  - name: Thomas Villmann
+    note:

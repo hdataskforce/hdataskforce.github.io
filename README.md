@@ -43,7 +43,8 @@ Member photos are intentionally not published (PDPA).
 
 ## Other pages
 
-`about.md`, `hdda-topics.md` and `materials.md` are plain Markdown. The navigation menu is
+`about.md` (which includes the research topics) and `materials.md` are plain Markdown;
+`hdda-topics.html` only redirects the old `/hdda-topics/` URL to the About page. The navigation menu is
 the `nav:` list in `_config.yml`. Layouts live in `_layouts/`, styles in `assets/css/main.css`.
 
 ## Previewing locally (optional)

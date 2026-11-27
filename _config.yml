@@ -13,7 +13,7 @@ repository: hdataskforce/hdataskforce.github.io
 # Navigation (order matters)
 nav:
   - { title: About,     url: /about/ }
-  - { title: Topics,    url: /hdda-topics/ }
+  - { title: Activities, url: /activities/ }
   - { title: Members,   url: /members/ }
   - { title: News,      url: /news/ }
   - { title: Materials, url: /materials/ }

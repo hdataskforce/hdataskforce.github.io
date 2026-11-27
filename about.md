@@ -17,15 +17,36 @@ accumulates, spurious correlations appear, and computation becomes expensive.
 
 The task force works to understand these *curses*, to exploit the *blessings* of high
 dimensionality, and to connect researchers across data mining, machine learning, statistics
-and the application domains. See [Topics]({{ '/hdda-topics/' | relative_url }}) for the
-questions we care about.
+and the application domains.
+
+## Research topics
+
+High dimensional data analysis covers a wide spectrum of topics. The questions we care about
+include, but are not limited to:
+
+- Systematic studies of how the curse of dimensionality affects data mining methods
+- Models of low intrinsic dimension: sparse representation, manifold models, latent structure models, large margin
+- How to exploit intrinsic dimension in optimisation tasks for data mining
+- New data mining techniques that scale with the intrinsic dimension, or exploit some properties of high dimensional data spaces
+- Dimensionality reduction
+- Methods of random projections, compressed sensing, and random matrix theory applied to high dimensional data mining and high dimensional optimisation
+- Theoretical underpinning of mining data whose dimensionality is larger than the sample size
+- Classification, regression, clustering, visualisation of high dimensional complex data sets
+- Functional data mining
+- Data presentation and visualisation methods for very high dimensional data sets
+- Data mining applications to real problems in science, engineering or businesses where the data is high dimensional
+
+For many of these topics you can find a collaborator, or an expert, among our
+[members]({{ '/members/' | relative_url }}).
 
 ## What we do
 
+Highlights are below; see [Activities]({{ '/activities/' | relative_url }}) for the full list.
+
 - **HDM workshop series.** We organise the International Workshop on High Dimensional Data
   Mining, held with the IEEE International Conference on Data Mining (ICDM). The
-  [13th edition, HDM'26]({{ '/2026/11/06/hdm26-high-dimensional-data-mining-workshop/' | relative_url }}),
-  takes place in Shenyang, China.
+  [13th edition, HDM'26]({{ '/hdm26/' | relative_url }}),
+  took place in Shenyang, China, in November 2026.
 - **Special sessions and tutorials** at IEEE conferences, such as the
   [special session at IEEE CIDM 2014]({{ '/2014/03/26/special-session-at-ieee-cidm-2014-on-high-dimensional-data-analysis-theoretical-advances-and-applications/' | relative_url }})
   and the [IJCNN 2015 tutorial on embedding methods]({{ '/2015/05/05/tutorial-at-ijcnn-on-embedding-methods/' | relative_url }}).

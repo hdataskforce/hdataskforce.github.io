@@ -17,8 +17,7 @@ unlabelled or auxiliary data. Topics include weak supervision, prototype-based a
 dimensionality reduction, random projections and random matrix theory, models of low intrinsic
 structure, and applications where the data is high dimensional.
 
-**Full details, programme and organisers:**
-<https://www.cs.science.cmu.ac.th/staff/jakramate/hdm26.html>
+**Full details, programme and organisers:** [HDM'26 workshop page]({{ '/hdm26/' | relative_url }})
 
 #### Programme (room: Kuala Lumpur)
 

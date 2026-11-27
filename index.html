@@ -22,14 +22,15 @@ title: Home
 <div class="wrap home-grid">
   <section class="home-news" aria-labelledby="news-h">
     <div class="section-head">
-      <h2 id="news-h">Latest news</h2>
-      <a href="{{ '/news/' | relative_url }}">All news →</a>
+      <h2 id="news-h">Recent activities</h2>
+      <a href="{{ '/activities/' | relative_url }}">All activities →</a>
     </div>
     <ol class="news-list news-cards">
-      {% for post in site.posts limit: 6 %}
+      {% assign recent = site.data.activities | sort: "year" | reverse %}
+      {% for a in recent limit: 6 %}{% if a.url contains "://" %}{% assign href = a.url %}{% else %}{% assign href = a.url | relative_url %}{% endif %}
       <li>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %Y" }}</time>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <time datetime="{{ a.year }}">{{ a.year }} · {{ a.type | append: "|" | replace: "s|", "" | remove: "|" }}</time>
+        <a href="{{ href }}">{{ a.title }}</a>
       </li>
       {% endfor %}
     </ol>

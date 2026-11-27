@@ -27,7 +27,9 @@ Website of the **IEEE Task Force on High Dimensional Data Analysis**, live at
 | `_data/leadership.yml` | Current and former leadership shown on the About page |
 | `about.md`, `materials.md` | Plain Markdown pages (About includes the research topics) |
 | `hdda-topics.html` | Redirect from the old `/hdda-topics/` URL to `/about/#research-topics` |
-| `activities.md` | `/activities/`: everything the TF organises (workshops, special sessions, tutorials, seminars), newest first |
+| `_data/activities.yml` | Every TF activity; feeds `/activities/` and the home page's "Recent activities" |
+| `activities.md` | `/activities/`: lays out `_data/activities.yml` by type |
+| `news.html` | `/news/`: archive of all posts; not in the menu (News was dropped as it duplicated Activities) |
 | `hdm26.md` | `/hdm26/`: full HDM'26 workshop page (moved from the Chair's personal site) |
 | `index.html`, `members.html`, `news.html`, `404.html` | Generated listing pages |
 | `_layouts/`, `_includes/manifold.svg`, `assets/css/main.css` | Theme |
@@ -37,8 +39,8 @@ Website of the **IEEE Task Force on High Dimensional Data Analysis**, live at
 
 - **ICDM has a new website each year.** Update the ICDM link in `materials.md` when the next edition's
   site is announced.
-- **New activity** (workshop, special session, tutorial, seminar): add a `_posts/` entry and a line at the
-  top of the right section in `activities.md`. For a new HDM workshop, also update the "What we do" HDM
+- **New activity** (workshop, special session, tutorial, seminar): add an entry to `_data/activities.yml`
+  (optionally with a `_posts/` entry or a full page to link to). For a new HDM workshop, also update the "What we do" HDM
   bullet in `about.md`; a full workshop page can live at `/hdmYY/` like `hdm26.md`.
 
 ## Workflow

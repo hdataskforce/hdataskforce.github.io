@@ -1,0 +1,46 @@
+# Everything the task force organises. Shown on /activities/ (grouped by type)
+# and in "Recent activities" on the home page (newest year first).
+# Add new entries at the top. `type` must be one of the sections in activities.md.
+# `url` is a site path (starting with /) or a full https:// link.
+
+- type: Workshops
+  year: 2026
+  title: "HDM'26: 13th ICDM Workshop on High Dimensional Data Mining"
+  url: /hdm26/
+  venue: "ICDM 2026, Shenyang, China"
+  note: "Eight papers, with a focus on interpretable high dimensional data mining."
+
+- type: Workshops
+  year: 2020
+  title: "HDM'20: High Dimensional Data Mining Workshop"
+  url: /2020/03/25/hdm20-high-dimensional-data-mining-workshop/
+  venue: "ICDM 2020"
+
+- type: Seminars
+  year: 2018
+  title: "Shonan seminar on data-dependent dissimilarity measures"
+  url: /2017/08/28/shonan-seminar-scheduled-15-10-18-10-2018/
+  venue: "Shonan, Japan, 15–18 October 2018"
+
+- type: Workshops
+  year: 2017
+  title: "HDM'17: Workshop on High Dimensional Data Analysis"
+  url: /2017/08/28/workshop-on-high-dimensional-data-analysis/
+
+- type: Tutorials
+  year: 2015
+  title: "Data visualization with dimensionality reduction and manifold learning"
+  url: /2015/05/05/tutorial-at-ijcnn-on-embedding-methods/
+  venue: "IJCNN 2015"
+
+- type: Workshops
+  year: 2014
+  title: "HDM'14: 2nd International Workshop on High Dimensional Data Mining"
+  url: /2014/05/05/call-for-submissions-2nd-international-workshop-on-high-dimensional-data-mining-hdm14/
+  venue: "ICDM 2014"
+
+- type: Special sessions
+  year: 2014
+  title: "Special session on high dimensional data analysis: theoretical advances and applications"
+  url: /2014/03/26/special-session-at-ieee-cidm-2014-on-high-dimensional-data-analysis-theoretical-advances-and-applications/
+  venue: "IEEE CIDM 2014"
